@@ -1,118 +1,311 @@
-$texas-rose: #ffbb55;
-$tuna:#333344;
-$gun-powder:#444455;
-$porsche:#eebb66;
-$pickled-bluewood:#334455;
-$dolphin: #666677;
-$storm-gray: #777788;
-$flax: #eecc88;
-$cape-cod: #445555;
-$slategray: #778899;
-$steelgray: #222233;
-$almond: #eeddcc;
-$santas-gray:#9999aa;
-$titan-white:#eeeeff;
-$juniper:#779999;
-$malta:#bbaa99;
-$bone:#ddccbb;
-$coral-reef:#ccbbaa;
-body {
-  color: $texasrose;
-  background-color: $tuna;
-}
-
-a:link {
-  color: $gunpowder;
-  background-color: $porsche;
-}
-
-a:visited {
-  color: $pickled-bluewood;
-  background-color: $porsche;
-}
-
-a:hover {
-  color: $dolphin;
-  background-color: #texasrose;
-}
-
-a:active {
-  color: $storm-gray;
-  background-color: $flax;
-}
-
-header {
-  color: $flax;
-  background-color: $tuna;
-  border-color: $dolphin;
-}
-
-nav {
-  color: $cape-cod;
-  background-color: $slategray;
-  border-color: $dolphin;
-}
-
-.content {
-  color: $steelgray;
-  background-color: $almond;
-  border-color: $dolphin;
-}
-
-nav ul {
-  border-color: $santasgray;
-}
-
-nav a:link,
-nav a:visited {
-  color: $titan-white;
-  background-color: transparent;
-  border-color: $santasgray;
-}
-
-nav a:hover {
-  color: $gunpowder;
-  background-color: $porsche;
-}
-
-nav a:active {
-  color: $dolphin;
-  background-color: $flax;
-}
-
-nav a.here:link,
-nav a.here:visited,
-nav a.here:hover,
-nav a.here:active {
-  color: $titan-white;
-  background-color: $juniper;
-}
-
-.content img {
-  border-color: $malta;
-  outline-color: $bone;
-}
-
-#imagegallery a {
-  background-color: transparent;
-}
-
-th {
-  color: $almond;
-  background-color: $cape-cod;
-}
-
-tr td {
-  color: $steelgray;
-  background-color: $porsche;
-}
-
-tr.odd td {
-  color: $steelgray;
-  background-color: $flax;
-}
-
-tr.highlight td {
-  color: $steelgray;
-  background-color: $coral-reef;
-}
+      $texas-rose: #ffbb55;
+      $tuna:#333344;
+      $gun-powder:#444455;
+      $porsche:#eebb66;
+      $pickled-bluewood:#334455;
+      $dolphin: #666677;
+      $storm-gray: #777788;
+      $flax: #eecc88;
+      $cape-cod: #445555;
+      $slate-gray: #778899;
+      $steel-gray: #222233;
+      $almond: #eeddcc;
+      $santas-gray:#9999aa;
+      $titan-white:#eeeeff;
+      $juniper:#779999;
+      $malta:#bbaa99;
+      $bone:#ddccbb;
+      $coral-reef:#ccbbaa;
+      body {
+        color: $texas-rose;
+        background-color: $tuna;
+      }
+      
+      a:link {
+        color: $gun-powder;
+        background-color: $porsche;
+      }
+      
+      a:visited {
+        color: $pickled-bluewood;
+        background-color: $porsche;
+      }
+      
+      a:hover {
+        color: $dolphin;
+        background-color: #texas-rose;
+      }
+      
+      a:active {
+        color: $storm-gray;
+        background-color: $flax;
+      }
+      
+      header {
+        color: $flax;
+        background-color: $tuna;
+        border-color: $dolphin;
+      }
+      
+      nav {
+        color: $cape-cod;
+        background-color: $slate-gray;
+        border-color: $dolphin;
+        ul {
+          border-color: $santas-gray;
+        }
+        a:link,
+        a:visited {
+          color: $titan-white;
+          background-color: transparent;
+          border-color: $santas-gray;
+        }
+        a:hover {
+          color: $gun-powder;
+          background-color: $porsche;
+        }
+        a:active {
+          color: $dolphin;
+          background-color: $flax;
+        }
+      }
+      
+      .content {
+        color: $steel-gray;
+        background-color: $almond;
+        border-color: $dolphin;
+      }
+      
+      nav a.here:link,
+      nav a.here:visited,
+      nav a.here:hover,
+      nav a.here:active {
+        color: $titan-white;
+        background-color: $juniper;
+      }
+      
+      .content img {
+        border-color: $malta;
+        outline-color: $bone;
+      }
+      
+      #imagegallery a {
+        background-color: transparent;
+      }
+      
+      th {
+        color: $almond;
+        background-color: $cape-cod;
+      }
+      
+      tr td {
+        color: $steel-gray;
+        background-color: $porsche;
+      }
+      
+      tr.odd td {
+        color: $steel-gray;
+        background-color: $flax;
+      }
+      
+      tr.highlight td {
+        color: $steel-gray;
+        background-color: $coral-reef;
+      }
+      
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      
+      body {
+        margin: 1em 10%;
+        background-image: url(../img/background.gif);
+        background-attachment: fixed;
+        background-position: top left;
+        background-repeat: repeat-x;
+        max-width: 80em;
+      }
+      
+      header {
+        background-image: url(../img/guitarist.gif);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        border-width: .1em;
+        border-style: solid;
+        border-bottom-width: 0;
+      }
+      
+      nav {
+        background-image: url(../img/navbar.gif);
+        background-position: bottom left;
+        background-repeat: repeat-x;
+        border-width: .1em;
+        border-style: solid;
+        border-bottom-width: 0;
+        border-top-width: 0;
+        padding-left: 10%;
+      }
+      
+      nav ul {
+        width: 100%;
+        overflow: hidden;
+        border-left-width: .1em;
+        border-left-style: solid;
+      }
+      
+      nav li {
+        display: inline;
+      }
+      
+      nav li a {
+        display: block;
+        float: left;
+        padding: .5em 2em;
+        border-right: .1em solid;
+      }
+      
+      .content {
+        border-width: .1em;
+        border-style: solid;
+        border-top-width: 0;
+        padding: 2em 10%;
+        line-height: 1.8em;
+      }
+      
+      #about header {
+        background-image: url(../img/lineup.gif);
+      }
+      
+      #photos header {
+        background-image: url(../img/basshead.gif);
+      }
+      
+      #live header {
+        background-image: url(../img/bassist.gif);
+      }
+      
+      #contact header {
+        background-image: url(../img/drummer.gif);
+      }
+      
+      .content img {
+        border-width: .1em;
+        border-style: solid;
+        outline-width: .1em;
+        outline-style: solid;
+      }
+      
+      #imagegallery li {
+        display: inline;
+      }
+      
+      #slideshow {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      img#frame {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        border-width: 0;
+        outline-width: 0;
+      }
+      
+      img#preview {
+        position: absolute;
+        border-width: 0;
+        outline-width: 0;
+      }
+      
+      dl {
+        overflow: hidden;
+      }
+      
+      dt {
+        float: left;
+      }
+      
+      dd {
+        float: left;
+      }
+      
+      label {
+        display: block;
+      }
+      
+      fieldset {
+        border: 0;
+      }
+      
+      td {
+        padding: .5em 3em;
+      }
+      
+      body {
+        font-size: 76%;
+        font-family: "Helvetica", "Arial", sans-serif;
+      }
+      
+      body * {
+        font-size: 1em;
+      }
+      
+      a {
+        font-weight: bold;
+        text-decoration: none;
+      }
+      
+      nav {
+        font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+      }
+      
+      nav a {
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      .content {
+        line-height: 1.8em;
+      }
+      
+      .content p {
+        margin: 1em 0;
+      }
+      
+      h1 {
+        font-family: "Georgia", "Times New Roman", sans-serif;
+        font: 2.4em normal;
+      }
+      
+      h2 {
+        font-family: "Georgia", "Times New Roman", sans-serif;
+        font: 1.8em normal;
+        margin-top: 1em;
+      }
+      
+      h3 {
+        font-family: "Georgia", "Times New Roman", sans-serif;
+        font: 1.4em normal;
+        margin-top: 1em;
+      }
+      
+      #imagegallery li {
+        list-style-type: none;
+      }
+      
+      dt {
+        margin-right: 1em;
+      }
+      
+      dd {
+        margin-right: 3em;
+      }
+      
+      textarea {
+        font-family: "Helvetica", "Arial", sans-serif;
+      }
